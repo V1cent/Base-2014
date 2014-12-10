@@ -1,12 +1,17 @@
-insert into CONTENIDO values(1,'Titanic','Pelicula',2066,nulL,null,nulL,nulL,null,null,null,null,null,null);
+// ANDREA
+insert into CONTENIDO values(1,'Titanic','Pelicula',2066,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
 insert into CONTENIDO values(2,'Harry Potter y la Piedra Filosofal','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
 insert into CONTENIDO values(3,'Star Wars Episodio I','Pelicula',960,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
 insert into CONTENIDO values(4,'Apolo 13','Pelicula',900,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
 insert into CONTENIDO values(5,'Amor en los tiempos del colera','Libro',266,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(6,'Guerra de Los Mundos','Pelicula',2066,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(7,'Batman','Pelicula',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(8,'Django Unchained','Pelicula',960,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(9,'Gravity','Pelicula',900,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(10,'Lord of the Rings','Libro',266,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
 commit;
 
-
-insert into PROMOCION values(2,'Navidades Felices',15,null,null);
+insert into PROMOCION values(1,'Navidades Felices',15,null,null);
 insert into PROMOCION values(2,'Black Friday',30,null,null);
 insert into PROMOCION values(3,'2 X 1',nulL,null,null);
 insert into PROMOCION values(4,'2 y el segundo a la mitad',null,null,null);
@@ -266,9 +271,6 @@ insert into COMENTARIO values(4,'2013-12-15 03:04','Muy lenta',19556927,null,4);
 insert into COMENTARIO values(5,'2010-03-26 16:22','Mejor que la version anterior',19556927,1,nulL);
 commit;
 
-
-
-
 create table HISTORIAL(
 HIST_Id				bigint			not null,
 HIST_Fecha_ini		DATETIME		not null,
@@ -283,54 +285,73 @@ HIST_MOD_CONT_Id	bigint,
 constraint	Hist_pk	primary key(HIST_Id)
 );
 
-create table SUBTITULO(
-SUB_Id				bigint			not null,
-SUB_Nombre			varchar(20)		not null,
-constraint	Sub_pk	primary key(SUB_Id)
-);
+insert into HISTORIAL values(1,'2012-07-09 02:01','2013-07-09 03:01','190.72.188.64',2,1,null,nulL,null,null);
+insert into HISTORIAL values(2,'2012-07-09 02:01','2013-07-09 03:01','140.72.198.64',5,1,null,nulL,null,null);
+insert into HISTORIAL values(3,'2012-07-09 02:01',nulL,'160.72.108.64',3,1,null,nulL,null,null);
+insert into HISTORIAL values(4,'2012-07-09 02:01',null,'170.72.138.64',2,1,null,nulL,null,null);
+insert into HISTORIAL values(5,'2012-07-09 02:01','2013-07-09 03:01','180.72.128.64',3,1,null,nulL,null,null);
+commit;
 
-create table LENGUAJE(
-LENG_Id				bigint			not null,
-LENG_Nombre			varchar(20)		not null,
-constraint	Leng_pk	primary key(LENG_Id)
-);
+insert into SUBTITULO values(1,'Español');
+insert into SUBTITULO values(2,'Inglés');
+insert into SUBTITULO values(3,'Francés');
+insert into SUBTITULO values(4,'Alemán');
+insert into SUBTITULO values(5,'Chino Mandarín');
+commit; 
 
-create table DIRECTOR(
-DIR_Id				bigint			not null,
-DIR_Nombre			varchar(30)		not null,
-constraint	Dir_pk  primary key(DIR_Id)
-);
+insert into LENGUAJE values(1,'Español');
+insert into LENGUAJE values(2,'Inglés');
+insert into LENGUAJE values(3,'Francés');
+insert into LENGUAJE values(4,'Alemán');
+insert into LENGUAJE values(5,'Japonés');
+commit;
 
-create table ACTOR(
-ACT_Id				bigint			not null,
-ACT_Nombre			varchar(30)		not null,
-constraint	Act_pk	primary key(ACT_Id)
-);
+insert into DIRECTOR values(1,'Steven Spilberg');
+insert into DIRECTOR values(2,'Christopher Nolan');
+insert into DIRECTOR values(3,'Quentin Tarantino');
+insert into DIRECTOR values(4,'George Lucas');
+insert into DIRECTOR values(5,'Alfonso Cuaron');
+commit;
 
-create table CATEGORIA_PEL(
-CAT_PEL_Id			bigint			not null,
-CAT_PEL_Nombre		varchar(20)		not null,
-CAT_PEL_Descripcion	varchar(255)	not null,
-constraint Catp_pk	primary key(CAT_PEL_Id)
-);
+insert into ACTOR values(1,'Natalie Portman');
+insert into ACTOR values(2,'Leonardo Di Caprio');
+insert into ACTOR values(3,'Christian Bale');
+insert into ACTOR values(4,'Tom Cruse');
+insert into ACTOR values(5,'Sandra Bullok');
+commit;
 
-create table PEL_SUB(
-PS_PEL_Id			bigint			not null,
-PS_SUB_Id			bigint			not null,
-constraint PS_pk	primary key(PS_PEL_Id,PS_SUB_Id)
-);
+insert into CATEGORIA_PEL values(1,'Ciencia Ficción','Utiliza representaciones especulativas basadas en la ciencia de fenómenos imaginarios como extraterrestres, planetas alienígenas y viajes en el tiempo.');
+insert into CATEGORIA_PEL values(2,'Acción','Los elementos más frecuentes son persecuciones, tiroteos, peleas, explosiones, robos, y asaltos.');
+insert into CATEGORIA_PEL values(3,'Comedia','Película con humor o que intenta provocar la risa de la audiencia');
+insert into CATEGORIA_PEL values(4,'Terror','Se caracteriza por su voluntad de provocar en el espectador sensaciones de pavor');
+insert into CATEGORIA_PEL values(5,'Suspenso','Este género se caracteriza por un ritmo rápido, acción frecuente y con héroes ingeniosos que deben frustrar planes de los villanos).');
+commit;
 
-create table PEL_LEN(
-PL_PEL_Id			bigint			not null,
-PL_LENG_Id			bigint			not null,
-constraint	PL_pk	primary key(PL_PEL_Id,PL_LENG_Id)
-);
+insert into PEL_SUB values(1,1);
+insert into PEL_SUB values(2,2);
+insert into PEL_SUB values(3,3);
+insert into PEL_SUB values(4,4);
+insert into PEL_SUB values(5,5);
+commit;
+
+insert into PEL_LEN values(1,1);
+insert into PEL_LEN values(2,1);
+insert into PEL_LEN values(3,1);
+insert into PEL_LEN values(4,1);
+insert into PEL_LEN values(5,1);
+commit;
 
 create table PEL_ACT(
 PA_PEL_Id			bigint			not null,
 PA_ACT_Id			bigint			not null,
 constraint	PA_pk	primary key(PA_PEL_Id,PA_ACT_Id)
 );
+
+insert into PEL_ACT values(3,1);
+insert into PEL_ACT values(6,3);
+insert into PEL_ACT values(7,2);
+insert into PEL_ACT values(8,1);
+insert into PEL_ACT values(9,5);
 
 create table PEL_DIR(
 PD_PEL_Id			bigint			not null,
