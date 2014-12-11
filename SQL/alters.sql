@@ -48,6 +48,8 @@ alter table TARJETA_CREDITO add constraint fk_TC_Ban foreign key (TC_BAN_Id) ref
 alter table TARJETA_CREDITO add constraint fk_TC_TTC foreign key (TC_TTC_Id) references TIPO_TC (TTC_Id) on delete cascade;
 alter table COMENTARIO add constraint fk_COM_PERforeign key (COM_PER_Ci) references PERSONA (PER_Ci) on delete cascade;
 alter table COMENTARIO add constraint fk_COM_APLforeign key (COM_APL_Id) references APLICACION (APL_ID) on delete cascade;
+alter table COMENTARIO add constraint fk_COM_PER foreign key (COM_PER_Ci) references PERSONA (PER_Ci) on delete cascade;
+alter table COMENTARIO add constraint fk_COM_APL foreign key (COM_APL_Id) references APLICACION (APL_ID) on delete cascade;
 alter table COMENTARIO add constraint fk_COM_CONT foreign key (COM_CONT_Id) references CONTENIDO (CONT_ID) on delete cascade;
 alter table HISTORIAL add constraint fk_HIST_USU foreign key (HIST_USU_Id) references USUARIO (USU_Id) on delete cascade;
 alter table HISTORIAL add constraint fk_HIST_ACC foreign key (HIST_ACC_Id) references ACCION (ACC_Id) on delete cascade;
@@ -63,10 +65,4 @@ alter table PEL_ACT add constraint fk_PA_PEL foreign key (PA_PEL_Id) references 
 alter table PEL_ACT add constraint fk_PA_ACT foreign key (PA_ACT_Id) references ACTOR (ACT_Id) on delete cascade;
 alter table PEL_DIR add constraint fk_PD_PEL foreign key (PD_PEL_Id) references CONTENIDO (CONT_ID) on delete cascade;
 alter table PEL_DIR add constraint fk_PD_DIR foreign key (PD_DIR_Id) references DIRECTOR (DIR_Id) on delete cascade;
-
-
-
- 
-
-
-
+alter table PEL_DIR add constraint fk_PD_DIR foreign key (PD_DIR_Id) references DIRECTOR (DIR_Id) on delete cascade;
