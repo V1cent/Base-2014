@@ -1,6 +1,7 @@
+// ANDREA
 create table CONTENIDO(
 CONT_Id 	bigint		not null,
-CONT_Nombre	varchar(30)	not null,
+CONT_Nombre	varchar(60)	not null,
 CONT_Tipo	varchar(10) not null,
 CONT_Costo	int,
 CONT_Num_Desc	int,
@@ -10,7 +11,7 @@ PEL_Descripcion	varchar(100),
 PEL_Duracion	int,
 DISC_MU_Fecha_Pro	date,
 DISC_MU_Num_Can		int,
-DISC_MU_Formao		varchar(5),
+DISC_MU_Formato		varchar(10),
 DISC_MU_DISQ_Id		bigint,
 LIB_Fecha_Pub 	int,
 LIB_Num_Pg		int,
@@ -29,13 +30,13 @@ constraint pro_pk primary key (PRO_Id));
 
 create table CANTANTE (
 CANT_Id			bigint    not null,
-CANT_Nombre     varchar(12) not null,
+CANT_Nombre     varchar(30) not null,
 constraint cant_pk primary key (CANT_Id)
 );
 
 create table DISQUERA (
 DISQ_Id			bigint    not null,
-DISQ_Nombre     varchar(12) not null,
+DISQ_Nombre     varchar(30) not null,
 constraint disq_pk primary key (DISQ_Id)
 );
 
@@ -47,7 +48,7 @@ constraint ge_mu_pk primary key (GE_MU_Id)
 
 create table AUTOR (
 AUT_Id			bigint    not null,
-AUT_Nombre     varchar(12) not null,
+AUT_Nombre     varchar(30) not null,
 AUT_Resena     varchar(120)        ,
 constraint ge_mu_pk primary key (AUT_Id)
 );

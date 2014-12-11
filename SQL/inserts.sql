@@ -9,6 +9,13 @@ insert into CONTENIDO values(7,'Batman','Pelicula',210,nulL,null,nulL,nulL,null,
 insert into CONTENIDO values(8,'Django Unchained','Pelicula',960,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
 insert into CONTENIDO values(9,'Gravity','Pelicula',900,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
 insert into CONTENIDO values(10,'Lord of the Rings','Libro',266,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(11,'The Best Of Muse','Disco',960,nulL,null,nulL,nulL,null,'2006-01-01',24,'DoubleCD',1,null,null,null,null);
+insert into CONTENIDO values(12,'Ben Howard',900,nulL,null,nulL,nulL,null,'2008-01-01',14,'CD',4,null,null,null,null);
+insert into CONTENIDO values(13,'Fuerza Natural','Disco',266,nulL,null,nulL,nulL,null,'2009-01-01',11,'CD',5,null,null,null,null);
+insert into CONTENIDO values(14,'Sawdust','Disco',900,nulL,null,nulL,nulL,null,'2010-01-01',12,'CD/DVD',3,null,null,null,null);
+insert into CONTENIDO values(15,'Bob Marley and The wailers','Disco',266,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null,null,null);
+insert into CONTENIDO values(16,'Rayuela','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(17,'La Tregua','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
 commit;
 
 insert into PROMOCION values(1,'Navidades Felices',15,null,null);
@@ -40,7 +47,7 @@ insert into GENERO_MUSICA values(5,'Alternativo');
 commit;
 
 insert into AUTOR values(1,'Gabriel Garcia Marquez', null);
-insert into AUTOR values(2,'Paulo Coelho', null);
+insert into AUTOR values(2,'J.R.R Tolkien', null);
 insert into AUTOR values(3,'Mario Benedetti', null);
 insert into AUTOR values(4,'Julio Cortazar', null);
 insert into AUTOR values(5,'J. K. Rowling', null);
@@ -166,18 +173,6 @@ insert into SO_APL values(4,1,4);
 insert into SO_APL values(5,1,5);
 commit;
 
-create table PRO_CONT(
-PRO_CONT_Id			bigint   not null,
-PRO_CONT_Fecha_Ini 	DATETIME not null,
-PRO_CONT_Fecha_Fin 	DATETIME not null,
-PRO_CONT_PRO_Id     bigint	 not nulL,
-PRO_CONT_CONT_Id	bigint			 ,
-PRO_CONT_SO_APL_VER_Id		bigint   ,
-PRO_CONT_SO_APL_VER_SO_Id	bigint   ,
-PRO_CONT_SO_APL_APL_Id      bigint   ,
-constraint pro_cont primary key( PRO_CONT_Id, PRO_CONT_PRO_Id)
-);
-
 insert into PRO_CONT values(1,'2013-04-01','2014-01-03',1,nulL,null,null,null);
 insert into PRO_CONT values(2,'2013-05-02','2014-02-05',3,nulL,null,null,null);
 insert into PRO_CONT values(3,'2013-06-03','2014-03-07',1,nulL,null,null,null);
@@ -198,26 +193,6 @@ insert into ROL values(3,'Mantenimiento','Mantenimiento Web');
 insert into ROL values(4,'Ventas','Gerencia de Ventas');
 insert into ROL values(5,'Usuario','Cliente');
 	commit;
-
-
-create table PERSONA (
-PER_Ci				bigint			not null,
-PER_Primer_nom		varchar(10)		not null,
-PER_Segundo_nom		varchar(10)		not null,
-PER_Primer_ape		varchar(10)		not null,
-PER_Segundo_ape		varchar(10)		not null,
-PER_Correo_ele		varchar(50)		not null,
-PER_Fecha_nac		date			not null,
-PER_Telefono_cont	varchar(10)		not null,
-PER_Tipo			varchar(10)		not null,
-EMPL_Fecha_ing		date,
-EMPL_Fecha_cul		date,
-EMPL_Grupo_san		varchar(3),
-EMPL_CAR_EMP_Id		bigint,
-CLI_Estado_civ		varchar(20),
-CLI_Fecha_reg		date		,
-constraint	Per_pk	primary key (PER_Ci)
-);
 
 insert into PERSONA values(6915768,'ricardo',null,'arteaga','molina','molinaricardo@gmail.com','1966-01-10','1274567890','Cliente',null,nulL,null,null,null,null);
 insert into PERSONA values(19556927,'andrea','carolina','camacho','gonzalez','andrea.kmacho@gmail.com','1988-11-25','1234567891','Cliente',null,nulL,null,null,null,null);
@@ -254,36 +229,12 @@ insert into TARJETA_CREDITO values(4,'ramon gonzalez','2018-12-01',4111111111111
 insert into TARJETA_CREDITO values(5,'jennifer socorro','2015-12-01',4111111111114111,1,9876906,4);
 commit;
 
-create table COMENTARIO(
-COM_Id				bigint			not null,
-COM_Fechahora		DATETIME		not null,
-COM_Comentario		varchar(200)	not null,
-COM_PER_Ci			bigint			not null,
-COM_APL_Id			bigint,
-COM_CONT_Id			bigint,
-constraint	Com_pk	primary key(COM_Id)
-);
-
 insert into COMENTARIO values(1,'2012-07-09 02:01','Esta aplicacion viene con un defecto de instalacion',19556927,2,nulL);
 insert into COMENTARIO values(2,'2013-12-15 03:04','Recomiendo este contenido',19556927,null,4);
 insert into COMENTARIO values(3,'2010-03-26 16:22','Esta aplicacion es genial',19556927,1,nulL);
 insert into COMENTARIO values(4,'2013-12-15 03:04','Muy lenta',19556927,null,4);
 insert into COMENTARIO values(5,'2010-03-26 16:22','Mejor que la version anterior',19556927,1,nulL);
 commit;
-
-create table HISTORIAL(
-HIST_Id				bigint			not null,
-HIST_Fecha_ini		DATETIME		not null,
-HIST_Fecha_fin		DATETIME,
-HIST_Dir_IP			varchar(15),
-HIST_USU_Id			bigint			not null,
-HIST_ACC_Id			bigint			not null,
-HIST_MOD_USU_Id		bigint,
-HIST_MOD_PRO_Id		bigint,
-HIST_MOD_APL_Id		bigint,
-HIST_MOD_CONT_Id	bigint,
-constraint	Hist_pk	primary key(HIST_Id)
-);
 
 insert into HISTORIAL values(1,'2012-07-09 02:01','2013-07-09 03:01','190.72.188.64',2,1,null,nulL,null,null);
 insert into HISTORIAL values(2,'2012-07-09 02:01','2013-07-09 03:01','140.72.198.64',5,1,null,nulL,null,null);
@@ -341,80 +292,59 @@ insert into PEL_LEN values(4,1);
 insert into PEL_LEN values(5,1);
 commit;
 
-create table PEL_ACT(
-PA_PEL_Id			bigint			not null,
-PA_ACT_Id			bigint			not null,
-constraint	PA_pk	primary key(PA_PEL_Id,PA_ACT_Id)
-);
-
 insert into PEL_ACT values(3,1);
 insert into PEL_ACT values(6,3);
 insert into PEL_ACT values(7,2);
 insert into PEL_ACT values(8,1);
 insert into PEL_ACT values(9,5);
+commit;
 
-create table PEL_DIR(
-PD_PEL_Id			bigint			not null,
-PD_DIR_Id			bigint			not null,
-constraint PD_pk	primary key(PD_PEL_Id,PD_DIR_Id)
-);
+insert into PEL_DIR values(1,4);
+insert into PEL_DIR values(2,3);
+insert into PEL_DIR values(3,2);
+insert into PEL_DIR values(4,1);
+insert into PEL_DIR values(5,5);
+commit;
 
-create table CANT_DISC_MUS(
-CANT_DISC_MUS_CANT_Id     bigint	not null,
-CANT_DISC_MUS_CONT_Id     bigint	not null,
-CONSTRAINT cant_disc_mus primary key(CANT_DISC_MUS_CANT_Id, CANT_DISC_MUS_CONT_Id )
-);
+insert into CANT_DISC_MUS values(2,11);
+insert into CANT_DISC_MUS values(5,12);
+insert into CANT_DISC_MUS values(4,13);
+insert into CANT_DISC_MUS values(3,14);
+insert into CANT_DISC_MUS values(1,15);
+commit;
 
-create table AUT_LIB(
-AUT_LIB_AUT_Id     bigint	not null,
-AUT_LIB_CONT_Id     bigint	not null,
-CONSTRAINT aut_lib primary key(AUT_LIB_AUT_Id, AUT_LIB_CONT_Id )
-);
+insert into AUT_LIB values(4,16);
+insert into AUT_LIB values(5,2);
+insert into AUT_LIB values(1,5);
+insert into AUT_LIB values(1,11);
+insert into AUT_LIB values(3,17);
+commit;
 
-create table PEL_CAT_PEL(
-PEL_CAT_PEL_CAT_PEL_Id     bigint	not null,
-PEL_CAT_PEL_CONT_Id     bigint	not null,
-CONSTRAINT pel_cat_pel primary key(PEL_CAT_PEL_CAT_PEL_Id, PEL_CAT_PEL_CONT_Id  )
-);
-
-
-create table FACTURA (
-FACT_Id		bigint			not null,
-FACT_Fecha_Emi date     		not null,
-FACT_TC_Id		bigint		not null,
-constraint fac_pk primary key (FACT_Id, FACT_TC_Id)
-);
+insert into PEL_CAT_PEL values(1,1);
+insert into PEL_CAT_PEL values(1,3;
+insert into PEL_CAT_PEL values(1,4);
+insert into PEL_CAT_PEL values(1,6);
+insert into PEL_CAT_PEL values(1,7);
+commit;
 
 
-create table F_C_P (
-F_C_P_Id				bigint		not null,
-F_C_P_CONT_Id			bigint 				,
-F_C_P_FACT_Id			bigint 		not null,
-F_C_P_PRO_CONT_Id		bigint				,
-F_C_P_PRO_CONT_PRO_Id	bigint				,
-F_C_P_PRO_CONT_SO_APL_APL_Id		bigint				,
-F_C_P_PRO_CONT_SO_APL_VER_Id		bigint				,
-F_C_P_PRO_CONT_SO_APL_VER_SO_Id  bigint				,
-constraint f_c_p primary key(F_C_P_Id, F_C_P_FACT_Id)
-);
+insert into FACTURA values(1,'2011-10-09',1);
+insert into FACTURA values(2,'2012-10-09',2);
+insert into FACTURA values(3,'2012-10-09',3);
+insert into FACTURA values(4,'2012-10-09',3);
+insert into FACTURA values(5,'2012-10-09',5);
+commit;
 
-insert into F_C_P values(1,1,1,nulL,nulL,null,null,null);
-insert into F_C_P values(2,3,1,nulL,nulL,null,null,null);	
-insert into F_C_P values(3,5,3,nulL,nulL,null,null,null);
-insert into F_C_P values(4,1,2,nulL,nulL,null,null,null);
+insert into F_C_P values(1,1,1,2,nulL,null,null,null);
+insert into F_C_P values(2,3,1,null,nulL,null,null,null);	
+insert into F_C_P values(3,5,3,null,nulL,null,null,null);
+insert into F_C_P values(4,1,2,4,null,null,null,null);
 insert into F_C_P values(5,2,4,nulL,nulL,null,null,null);
-	commit;
-
-create table CALIFICACION (
-CAL_Id 				bigint     not null,
-CAL_Valor			varchar(1) not null,
-CAL_Fechahora		DATETIME   not null,
-CAL_F_C_P_Id        bigint		not null,
-constraint cal_pk primary key(CAL_Id));
+commit;
 
 insert into CALIFICACION values(1,'5','2013-04-03',1);
 insert into CALIFICACION values(2,'9','2013-04-03',2);
 insert into CALIFICACION values(3,'6','2013-04-03',2);
-insert into CALIFICACION values(4,'3','2013-04-03',6);
+insert into CALIFICACION values(4,'3','2013-04-03',4);
 insert into CALIFICACION values(5,'0','2013-04-03',5);
 commit;
