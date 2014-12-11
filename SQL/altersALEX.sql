@@ -1,0 +1,40 @@
+//ALEXANDER
+alter table EMPRESA constraint	fk_EMP_LUG 	foreign key (EMP_LUG_Id) references LUGAR (LUG_ID) on delete cascade;
+alter table CARGO_EMP constraint fk_CAR_EMP_EMP foreign key(CAR_EMP_EMP_Id) references EMPRESA (EMP_Id) on delete cascade;
+alter table LUGAR constraint fk_LUG_LUG foreign key (LUG_LUG_Id) references LUGAR (LUG_ID) on delete cascade;
+alter table SISTEMA_OPERATIVO constraint fk_SO_EMP foreign key (SO_EMP_Id) references EMPRESA (EMP_ID) on delete cascade;
+alter table SISTEMA_OPERATIVO constraint fk_SO_TI foreign key (SO_TI_Id) references TIPO_SO (TI_ID) on delete cascade;
+alter table FACTURA constraint fk_FAC_TC foreign key (FAC_TC_Id) references TARJETA_CREDITO (TC_ID) on delete cascade;
+alter table VERSION constraint fk_VER_SO foreign key (VER_SO_Id) references SISTEMA_OPERATIVO (SO_Id) on delete cascade;
+alter table VIDEO constraint fk_VID_APL foreign key (VID_APL_Id) references APLICACION (APL_ID) on delete cascade;
+alter table VIDEO constraint fk_VID_CONT foreign key (VID_CONT_Id) references CONTENIDO (CONT_Id) on delete cascade;
+alter table IMAGEN constraint fk_IMG_APL foreign key (IMG_APL_Id) references APLICACION (APL_ID) on delete cascade;
+alter table IMAGEN constraint fk_IMG_CONT foreign key (IMG_CONT_Id) references CONTENIDO (CONT_ID) on delete cascade;
+alter table CALIFICACION constraint fk_CAL_F_C_P foreign key (CAL_F_C_P_Id) references F_C_P (F_C_P_Id) on delete cascade;
+alter table GEN_MU_DISC_MU constraint fk_GEN_MU_DISC_MU foreign key (GEN_MU_DISC_MU_CONT_Id) references CONTENIDO (CONT_Id) on delete cascade;
+alter table GEN_MU_DISC_MU constraint fk_GEN_MU_DISC_MU_GE_MU foreign key (GEN_MU_DISC_MU_GE_MU_Id) references GENERO_MUSICA (GE_MU_Id) on delete cascade;
+alter table GEN_LIB_LIB constraint fk_GEN_LIB_LIB_CONT foreign key (GEN_LIB_LIB_CONT_Id ) references CONTENIDO (CONT_Id) on delete cascade;
+alter table GEN_LIB_LIB constraint fk_GEN_LIB_LIB_GEN_LIB foreign key (GEN_LIB_LIB_GEN_LIB_Id ) references GENERO_LIBRO(GEN_LIB_Id) on delete cascade;
+alter table CARAC_SO constraint fk_CARAC_SO_CARAC foreign key (CARAC_SO_CARAC_Id ) references CARACTERISTICA (CARAC_Id) on delete cascade;
+alter table CARAC_SO constraint fk_CARAC_SO_SO foreign key (CARAC_SO_SO_Id ) references SISTEMA_OPERATIVO (SO_Id) on delete cascade;
+alter table CARAC_VER constraint fk_CARAC_VER_CARAC foreign key (CARAC_VER_CARAC_Id) references CARACTERISTICA(CARAC_Id) on delete cascade;
+alter table CARAC_VER constraint fk_CARAC_VER_CARAC foreign key (CARAC_VER_VER_Id) references VERSION (VER_Id) on delete cascade;
+alter table SO_APL constraint fk_SO_APL_APL foreign key (SO_APL_APL_Id) references APLICACION (APL_ID) on delete cascade;
+alter table SO_APL constraint fk_SO_APL_VER foreign key (SO_APL_VER_Id) references VERSION (VER_Id) on delete cascade;
+alter table SO_APL constraint fk_SO_APL_VER_SO foreign key (SO_APL_VER_SO_Id) references VERSION (VER_SO_Id) on delete cascade;
+alter table PRO_CONT constraint fk_PRO_CONT_CONT foreign key (PRO_CONT_CONT_Id) references CONTENIDO (CONT_Id) on delete cascade;
+alter table PRO_CONT constraint fk_PRO_CONT_PRO foreign key (PRO_CONT_PRO_Id) references PROMOCION (PRO_Id) on delete cascade;
+alter table PRO_CONT constraint fk_PRO_CONT_SO_APL_VER foreign key (PRO_CONT_SO_APL_VER_Id) references SO_APL (SO_APL_VER_Id) on delete cascade;
+alter table PRO_CONT constraint fk_PRO_CONT_SO_APL_VER_SO foreign key (PRO_CONT_SO_APL_VER_SO_Id) references SO_APL (SO_APL_VER_SO_Id) on delete cascade;
+alter table PRO_CONT constraint fk_PRO_CONT_SO_APL_APL foreign key (PRO_CONT_SO_APL_APL_Id) references SO_APL (SO_APL_APL_Id) on delete cascade;
+alter table F_C_P constraint fk_F_C_P_CONT foreign key (F_C_P_CONT_Id) references CONTENIDO (CONT_Id) on delete cascade;
+alter table F_C_P constraint fk_F_C_P_FACT foreign key (F_C_P_FACT_Id) references FACTURA (FACT_Id) on delete cascade;
+alter table F_C_P constraint fk_F_C_P_PRO_CONT foreign key (F_C_P_PRO_CONT_Id) references PRO_CONT(PRO_CONT_Id) on delete cascade;
+alter table F_C_P constraint fk_F_C_P_PRO_CONT_PRO foreign key (F_C_P_PRO_CONT_PRO_Id) references PRO_CONT(PRO_CONT_PRO_Id) on delete cascade;
+alter table F_C_P constraint fk_F_C_P_PRO_CONT_SO_APL_APL foreign key(F_C_P_PRO_CONT_SO_APL_APL_Id) references PRO_CONT (PRO_CONT_SO_APL_APL_Id) ON delete cascade;
+alter table F_C_P constraint fk_F_C_P_PRO_CONT_SO_APL_VER foreign key(F_C_P_PRO_CONT_SO_APL_VER_Id) references PRO_CONT (PRO_CONT_SO_APL_VER_Id) ON delete cascade;
+alter table F_C_P constraint fk_F_C_P_PRO_CONT_SO_APL_VER_SO foreign key(F_C_P_PRO_CONT_SO_APL_VER_SO_Id) references PRO_CONT (PRO_CONT_SO_APL_VER_SO_Id) ON delete cascade;
+alter table CONTENIDO constraint fk_DISC_MU_DISC foreign key (DISC_MU_DISC_Id) references DISQUERA (DISQ_Id) on delete cascade;
+alter table CONTENIDO constraint fk_LIB_EDIT foreign key (LIB_EDIT_Id) references EDITOTIAL (EDIT_Id) on delete cascade;
+
+
