@@ -1,4 +1,3 @@
-// ANDREA
 create table CONTENIDO(
 CONT_Id 	bigint		not null,
 CONT_Nombre	varchar(60)	not null,
@@ -212,7 +211,6 @@ F_C_P_PRO_CONT_SO_APL_VER_Id		bigint				,
 F_C_P_PRO_CONT_SO_APL_VER_SO_Id  bigint				,
 constraint f_c_p primary key(F_C_P_Id, F_C_P_FACT_Id)
 );
-
 
 create table ACCION (
 ACC_Id				bigint			not null,

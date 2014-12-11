@@ -1,4 +1,10 @@
-// ANDREA
+insert into DISQUERA values(1,'Sony Music');
+insert into DISQUERA values(2,'EMI');
+insert into DISQUERA values(3,'Universal');
+insert into DISQUERA values(4,'Warner');
+insert into DISQUERA values(5,'Ark Music Factory');
+commit;
+
 insert into CONTENIDO values(1,'Titanic','Pelicula',2066,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
 insert into CONTENIDO values(2,'Harry Potter y la Piedra Filosofal','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
 insert into CONTENIDO values(3,'Star Wars Episodio I','Pelicula',960,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
@@ -10,10 +16,10 @@ insert into CONTENIDO values(8,'Django Unchained','Pelicula',960,nulL,null,nulL,
 insert into CONTENIDO values(9,'Gravity','Pelicula',900,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
 insert into CONTENIDO values(10,'Lord of the Rings','Libro',266,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
 insert into CONTENIDO values(11,'The Best Of Muse','Disco',960,nulL,null,nulL,nulL,null,'2006-01-01',24,'DoubleCD',1,null,null,null,null);
-insert into CONTENIDO values(12,'Ben Howard',900,nulL,null,nulL,nulL,null,'2008-01-01',14,'CD',4,null,null,null,null);
+insert into CONTENIDO values(12,'Ben Howard','Disco',900,nulL,null,nulL,nulL,null,'2008-01-01',14,'CD',4,null,null,null,null);
 insert into CONTENIDO values(13,'Fuerza Natural','Disco',266,nulL,null,nulL,nulL,null,'2009-01-01',11,'CD',5,null,null,null,null);
 insert into CONTENIDO values(14,'Sawdust','Disco',900,nulL,null,nulL,nulL,null,'2010-01-01',12,'CD/DVD',3,null,null,null,null);
-insert into CONTENIDO values(15,'Bob Marley and The wailers','Disco',266,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null,null,null);
+insert into CONTENIDO values(15,'Bob Marley and The wailers','Disco',266,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null);
 insert into CONTENIDO values(16,'Rayuela','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
 insert into CONTENIDO values(17,'La Tregua','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
 commit;
@@ -30,13 +36,6 @@ insert into CANTANTE values(2,'Muse');
 insert into CANTANTE values(3,'The Killers');
 insert into CANTANTE values(4,'Gustavo Cerati');
 insert into CANTANTE values(5,'Ben Howard');
-commit;
-
-insert into DISQUERA values(1,'Sony Music');
-insert into DISQUERA values(2,'EMI');
-insert into DISQUERA values(3,'Universal');
-insert into DISQUERA values(4,'Warner');
-insert into DISQUERA values(5,'Ark Music Factory');
 commit;
 
 insert into GENERO_MUSICA values(1,'Rock');
@@ -321,7 +320,7 @@ insert into AUT_LIB values(3,17);
 commit;
 
 insert into PEL_CAT_PEL values(1,1);
-insert into PEL_CAT_PEL values(1,3;
+insert into PEL_CAT_PEL values(1,3);
 insert into PEL_CAT_PEL values(1,4);
 insert into PEL_CAT_PEL values(1,6);
 insert into PEL_CAT_PEL values(1,7);

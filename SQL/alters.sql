@@ -1,4 +1,3 @@
-//ANDREA
 alter table EMPRESA add constraint	fk_EMP_LUG 	foreign key (EMP_LUG_Id) references LUGAR (LUG_ID) on delete cascade;
 alter table CARGO_EMP add constraint fk_CAR_EMP_EMP foreign key(CAR_EMP_EMP_Id) references EMPRESA (EMP_Id) on delete cascade;
 alter table LUGAR add constraint fk_LUG_LUG foreign key (LUG_LUG_Id) references LUGAR (LUG_ID) on delete cascade;
@@ -64,10 +63,3 @@ alter table PEL_ACT add constraint fk_PA_PEL foreign key (PA_PEL_Id) references 
 alter table PEL_ACT add constraint fk_PA_ACT foreign key (PA_ACT_Id) references ACTOR (ACT_Id) on delete cascade;
 alter table PEL_DIR add constraint fk_PD_PEL foreign key (PD_PEL_Id) references CONTENIDO (CONT_ID) on delete cascade;
 alter table PEL_DIR add constraint fk_PD_DIR foreign key (PD_DIR_Id) references DIRECTOR (DIR_Id) on delete cascade;
-
-
-
- 
-
-
-
