@@ -1,0 +1,26 @@
+﻿@model GlobalStore.Models.CananteModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm("AddCantante", "Cantante", FormMethod.Post))
+{
+    @Html.ValidationSummary(true, "No se pudo crear el cantante.")
+    <div>
+        <fieldset>
+            <legend>Nombre Cantante</legend>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Ncantante)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Ncantante)
+                @Html.ValidationMessageFor(m => m.Ncantante)
+            </div>
+            <p>
+                <input type="submit" value="Agregar" />
+            </p>
+        </fieldset>
+    </div>
+}
