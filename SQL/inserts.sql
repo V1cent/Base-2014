@@ -5,23 +5,86 @@ insert into DISQUERA values(4,'Warner');
 insert into DISQUERA values(5,'Ark Music Factory');
 commit;
 
-insert into CONTENIDO values(1,'Titanic','Pelicula',2066,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
-insert into CONTENIDO values(2,'Harry Potter y la Piedra Filosofal','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
-insert into CONTENIDO values(3,'Star Wars Episodio I','Pelicula',960,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
-insert into CONTENIDO values(4,'Apolo 13','Pelicula',900,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
-insert into CONTENIDO values(5,'Amor en los tiempos del colera','Libro',266,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
-insert into CONTENIDO values(6,'Guerra de Los Mundos','Pelicula',2066,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
-insert into CONTENIDO values(7,'Batman','Pelicula',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
-insert into CONTENIDO values(8,'Django Unchained','Pelicula',960,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
-insert into CONTENIDO values(9,'Gravity','Pelicula',900,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
-insert into CONTENIDO values(10,'Lord of the Rings','Libro',266,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
-insert into CONTENIDO values(11,'The Best Of Muse','Disco',960,nulL,null,nulL,nulL,null,'2006-01-01',24,'DoubleCD',1,null,null,null,null);
-insert into CONTENIDO values(12,'Ben Howard','Disco',900,nulL,null,nulL,nulL,null,'2008-01-01',14,'CD',4,null,null,null,null);
-insert into CONTENIDO values(13,'Fuerza Natural','Disco',266,nulL,null,nulL,nulL,null,'2009-01-01',11,'CD',5,null,null,null,null);
-insert into CONTENIDO values(14,'Sawdust','Disco',900,nulL,null,nulL,nulL,null,'2010-01-01',12,'CD/DVD',3,null,null,null,null);
-insert into CONTENIDO values(15,'Bob Marley and The wailers','Disco',266,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null);
+insert into CONTENIDO values(1,'Titanic','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+
+insert into CONTENIDO values(2,'Harry Potter y la Piedra Filosofal','Libro',200,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+
+insert into CONTENIDO values(3,'Star Wars Episodio I','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(4,'Apolo 13','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+
+insert into CONTENIDO values(5,'Amor en los tiempos del colera','Libro',200,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+
+insert into CONTENIDO values(6,'Guerra de Los Mundos','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(7,'Batman','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(8,'Django Unchained','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(9,'Gravity','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+
+insert into CONTENIDO values(10,'Lord of the Rings 1 : The Fellowship of the Ring','Libro',200,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+
+insert into CONTENIDO values(11,'The Best Of Muse','Disco',300,nulL,null,nulL,nulL,null,'2006-01-01',24,'DoubleCD',1,null,null,null,null);
+insert into CONTENIDO values(12,'Ben Howard','Disco',300,nulL,null,nulL,nulL,null,'2008-01-01',14,'CD',4,null,null,null,null);
+insert into CONTENIDO values(13,'Fuerza Natural','Disco',300,nulL,null,nulL,nulL,null,'2009-01-01',11,'CD',5,null,null,null,null);
+insert into CONTENIDO values(14,'Sawdust','Disco',300,nulL,null,nulL,nulL,null,'2010-01-01',12,'CD/DVD',3,null,null,null,null);
+insert into CONTENIDO values(15,'Bob Marley and The wailers','Disco',300,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null);
+
 insert into CONTENIDO values(16,'Rayuela','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
 insert into CONTENIDO values(17,'La Tregua','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+
+insert into CONTENIDO values(18,'Tokyo Blues','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(19,'Berserk: The Golden Age Arc 1 The Egg of The King','Pelicula', 00,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(20,'Berserk: The Golden Age Arc 2 The Battle of Doldrey','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(21,'Berserk: The Golden Age Arc 3 The Advent','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(22,'2001: A Space Odyssey','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(23,'Iron Man','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(24,'Iron Man 2','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(25,'Iron Man 3','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(26,'Thor','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(27,'Thor: The Dark World','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(28,'Captain America: The First Avenger','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(29,'Captain America: The Winter Soldier','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(30,'Marvel´s The Avengers','Pelicula',500,nulL,null,nulL,nulL,nu37,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(31,'500 days of Summer','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(32,'The Conjuring','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(33,'The Nightmare Before Christmas','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(34,'Frozen','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(35,'World War Z','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(36,'Moulin Rouge','Pelicula',500,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(37,'Maleficent','Pelicula',500,,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+
+insert into CONTENIDO values(38,'El Atlas de las nubes','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(39,'The Magicians','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(40,'Baila,Baila,Baila','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(41,'Inferno','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(42,'Los Años de Peregrinacion del Chico sin Color','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(43,'La Conspiracion','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(44,'El Simbolo Perdido','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(45,'Cincuenta Sombras  de Grey','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(46,'Cincuenta Sombras mas Oscuras','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(47,'Cincuenta Sombras Liberadas','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(48,'El Gran Arcano','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(49,'El Noveno Circulo','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(50,'A Game of Thrones','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(51,'En la Cripta','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(52,'La llamada de Cthulhu','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(53,'El Caballo de Troya','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(54,'El Hobbit','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(55,'Kafka en la Orilla','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(56,'1Q84','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+insert into CONTENIDO values(57,'Entrevista con el Vampiro','Libro',210,nulL,null,nulL,nulL,null,null,null,null,null,null,null,null,null);
+
+insert into CONTENIDO values(58,'Gaia','Disco',300,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null);
+insert into CONTENIDO values(59,'Gaia II: La Voz Dormida','Disco',300,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null);
+insert into CONTENIDO values(60,'Gaia III: Atlantia','Disco',300,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null);
+insert into CONTENIDO values(61,'Ramdon Acces Memories','Disco',300,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null);
+insert into CONTENIDO valueS(62,'Discovery','Disco',300,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null);
+insert into CONTENIDO values(63,'Nightfall in Midlle-Earth','Disco',300,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null);
+insert into CONTENIDO values(64,'At The Edge of Time','Disco',300,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null);+
+insert into CONTENIDO values(65,'Dawn Of Victory','Disco',300,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null);
+insert into CONTENIDO values(66,'Power Of The Dragonflame','Disco',300,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null);
+insert into CONTENIDO values(67,'The Cross of Changes','Disco',300,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null);
+insert into CONTENIDO values(68,'A Posteriori','Disco',300,nulL,null,nulL,nulL,null,'1986-01-01',13,'Vinil',1,null,null,null,null);
+
+
 commit;
 
 insert into PROMOCION values(1,'Navidades Felices',15,null,null);
