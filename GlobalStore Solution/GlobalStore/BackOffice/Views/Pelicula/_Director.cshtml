@@ -1,0 +1,24 @@
+﻿@model BackOffice.Models.DirectorModel
+
+<h2>Director</h2>
+
+@using (Html.BeginForm("AddDirector", "Pelicula", FormMethod.Post))
+{
+    <div>
+        <fieldset>
+            <legend>Agregar Director</legend>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Ndirector)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Ndirector)
+                @Html.ValidationMessageFor(m => m.Ndirector)
+            </div>
+            <p>
+                <input type="submit" value="Agregar" />
+            </p>
+        </fieldset>
+
+    </div>
+    
+}

@@ -1,0 +1,24 @@
+﻿@model BackOffice.Models.ActorModel
+
+<h2>Actor</h2>
+
+@using (Html.BeginForm("AddActor", "Pelicula", FormMethod.Post))
+{
+    <div>
+        <fieldset>
+            <legend>Agregar Director</legend>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Nactor)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Nactor)
+                @Html.ValidationMessageFor(m => m.Nactor)
+            </div>
+            <p>
+                <input type="submit" value="Agregar" />
+            </p>
+        </fieldset>
+
+    </div>
+    
+}

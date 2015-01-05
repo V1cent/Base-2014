@@ -104,11 +104,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DiscoController.cs" />
+    <Compile Include="Controllers\EmpresaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PeliculaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\PeliculaModels.cs" />
+    <Compile Include="Models\EmpresaModels.cs" />
+    <Compile Include="Models\DiscoModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -205,6 +211,18 @@
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Disco\Index.cshtml" />
+    <Content Include="Views\Empresa\Index.cshtml" />
+    <Content Include="Views\Disco\VistaPrueba.cshtml" />
+    <Content Include="Views\Pelicula\Index.cshtml" />
+    <Content Include="Views\Pelicula\_CategoriaPelicula.cshtml" />
+    <Content Include="Views\Empresa\_CargoEmpresa.cshtml" />
+    <Content Include="Views\Empresa\_Empresa.cshtml" />
+    <Content Include="Views\Pelicula\_Director.cshtml" />
+    <Content Include="Views\Pelicula\_Actor.cshtml" />
+    <Content Include="Views\Pelicula\_Lenguaje.cshtml" />
+    <Content Include="Views\Pelicula\_Subtitulo.cshtml" />
+    <Content Include="Views\Pelicula\_BorrarSubtitulo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

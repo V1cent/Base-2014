@@ -1,0 +1,41 @@
+﻿@model BackOffice.Models.CargoEmpresaModel
+
+<h2>Cargo Empresa</h2>
+
+@using (Html.BeginForm("AddCargoEmpresa", "Empresa", FormMethod.Post))
+{   
+    <div>
+         <fieldset>
+            <legend>Insertar Cargo de empresa</legend>
+             <div class="editor-label">
+                @Html.LabelFor(m => m.Ncargo_emp)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Ncargo_emp)
+                @Html.ValidationMessageFor(m =>m.Ncargo_emp)
+            </div>
+
+             <div class="editor-label">
+                @Html.LabelFor(m => m.Scargo_emp)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Scargo_emp)
+                @Html.ValidationMessageFor(m =>m.Scargo_emp)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Ecargo_emp)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Ecargo_emp)
+                @Html.ValidationMessageFor(m =>m.Ecargo_emp)
+            </div>
+         </fieldset>
+
+    </div>
+    
+    
+     <p>
+       <input type="submit" value="Agregar" />
+     </p>
+}

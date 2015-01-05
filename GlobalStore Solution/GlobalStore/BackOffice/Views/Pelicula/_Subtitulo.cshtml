@@ -1,0 +1,24 @@
+﻿@model BackOffice.Models.SubtituloModel
+
+<h2>Actor</h2>
+
+@using (Html.BeginForm("AddSubtitulo", "Pelicula", FormMethod.Post))
+{
+    <div>
+        <fieldset>
+            <legend>Agregar Director</legend>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Nsubtitulo)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Nsubtitulo)
+                @Html.ValidationMessageFor(m => m.Nsubtitulo)
+            </div>
+            <p>
+                <input type="submit" value="Agregar" />
+            </p>
+        </fieldset>
+
+    </div>
+    
+}

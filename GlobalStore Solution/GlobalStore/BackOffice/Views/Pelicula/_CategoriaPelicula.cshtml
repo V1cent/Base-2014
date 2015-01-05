@@ -1,0 +1,35 @@
+﻿@model BackOffice.Models.CategoriaPeliculaModel
+@{
+    ViewBag.Title = "Categoria Pelicula";
+}
+
+<h2>Categorias</h2>
+
+@using (Html.BeginForm("AddCategoriaPelicula", "Pelicula", FormMethod.Post))
+{
+   
+    <div>
+        <fieldset>
+            <legend>Agregar Categoria Pelicula</legend>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Ncategoriapelicula)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Ncategoriapelicula)
+                @Html.ValidationMessageFor(m => m.Ncategoriapelicula)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Dcategoriapelicula)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Dcategoriapelicula)
+                @Html.ValidationMessageFor(m => m.Dcategoriapelicula)
+            </div>
+            <p>
+                <input type="submit" value="Agregar" />
+            </p>
+        </fieldset>
+    </div>
+}
+

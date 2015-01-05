@@ -1,0 +1,24 @@
+﻿@model BackOffice.Models.BorrarSubtituloModel
+
+<h2>Actor</h2>
+
+@using (Html.BeginForm("DelSubtitulo", "Pelicula", FormMethod.Post))
+{
+    <div>
+        <fieldset>
+            <legend>Agregar Director</legend>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Dsubtitulo)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Dsubtitulo)
+                @Html.ValidationMessageFor(m => m.Dsubtitulo)
+            </div>
+            <p>
+                <input type="submit" value="Agregar" />
+            </p>
+        </fieldset>
+
+    </div>
+    
+}

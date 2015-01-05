@@ -1,0 +1,72 @@
+﻿@model BackOffice.Models.EmpresaModel
+
+<h2>Empresa</h2>
+
+@using (Html.BeginForm("AddDirector", "Pelicula", FormMethod.Post))
+{
+    <div>
+        <fieldset>
+            <legend>Agregar Empresa</legend>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Nempresa)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Nempresa)
+                @Html.ValidationMessageFor(m => m.Nempresa)
+            </div>
+           
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Nsitiowebemp)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Nsitiowebemp)
+                @Html.ValidationMessageFor(m => m.Nsitiowebemp)
+            </div>
+
+            
+            <div class="editor-label">
+                @Html.LabelFor(m => m.correoemp)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.correoemp)
+                @Html.ValidationMessageFor(m => m.correoemp)
+            </div>
+
+           
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Nlugar)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Nlugar)
+                @Html.ValidationMessageFor(m =>  m.Nlugar)
+            </div>
+
+            
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Tlugar)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Tlugar)
+                @Html.ValidationMessageFor(m =>  m.Tlugar)
+            </div>
+
+           
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Dlugar)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Dlugar)
+                @Html.ValidationMessageFor(m =>  m.Dlugar)
+            </div>
+
+            <p>
+                <input type="submit" value="Agregar" />
+            </p>
+        </fieldset>
+
+    </div>
+    
+}
+
+
+

@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Editor de Peliculas</h2>
+<table cellspacing="10">
+    <tr>
+        <td id="peli_link"><a>Peliculas</a></td>
+        <td id="cate_link"><a>Categorias</a></td>
+        <td id="direct_link"><a>Director</a></td>
+        <td id="actor_link"><a>Actores</a></td>
+        <td id="lenguaje_link"><a>Lenguaje</a></td>
+        <td id="sub_link"><a>Subtitulos</a></td>
+         <td id="dellsub_link"><a>Borrar Subtitulos</a></td>
+    </tr>
+</table>
+<div class="container">
+    <div class="contenido" id="peliculas">
+        <h2>Peliculas</h2>
+        <div>
+            <p>Dentro de este div se van a listar todas las peliculas existentes y se hara su create</p>
+        </div>
+    </div>
+    <div id="categorias" class="contenido" style="display: none">
+        @Html.Partial("_CategoriaPelicula")
+    </div>
+    <div class="contenido" id="directores" style="display: none">
+         @Html.Partial("_Director")
+    </div>
+    <div class="contenido" id="actores" style="display: none">
+         @Html.Partial("_Actor")
+    </div>
+     <div class="contenido" id="lenguaje" style="display: none">
+         @Html.Partial("_Lenguaje")
+    </div>
+    <div class="contenido" id="subtitulo" style="display: none">
+         @Html.Partial("_Subtitulo")
+    </div>
+     <div class="contenido" id="dellsubtitulo" style="display: none">
+         @Html.Partial("_BorrarSubtitulo")
+    </div>
+
+
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#cate_link").click(function () {
+            $(".contenido").hide();
+            $("#categorias").fadeIn();
+        })
+        $("#peli_link").click(function () {
+            $(".contenido").hide();
+            $("#peliculas").fadeIn();
+        })
+        $("#direct_link").click(function () {
+            $(".contenido").hide();
+            $("#directores").fadeIn();
+        })
+        $("#actor_link").click(function () {
+            $(".contenido").hide();
+            $("#actores").fadeIn();
+        })
+        $("#lenguaje_link").click(function () {
+            $(".contenido").hide();
+            $("#lenguaje").fadeIn();
+        })
+
+        $("#sub_link").click(function () {
+            $(".contenido").hide();
+            $("#subtitulo").fadeIn();
+        })
+
+        $("#dellsub_link").click(function () {
+            $(".contenido").hide();
+            $("#dellsubtitulo").fadeIn();
+        })
+
+    });
+
+</script>

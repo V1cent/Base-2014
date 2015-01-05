@@ -4,3 +4,9 @@ C:\Users\andrea\Documents\Visual Studio 2012\Projects\GlobalStore\DataAccess\bin
 C:\Users\andrea\Documents\Visual Studio 2012\Projects\GlobalStore\DataAccess\bin\Debug\MySql.Data.dll
 C:\Users\andrea\Documents\Visual Studio 2012\Projects\GlobalStore\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\andrea\Documents\Visual Studio 2012\Projects\GlobalStore\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\ALEXANDER\Documents\Base-2014\GlobalStore Solution\GlobalStore\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\ALEXANDER\Documents\Base-2014\GlobalStore Solution\GlobalStore\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\ALEXANDER\Documents\Base-2014\GlobalStore Solution\GlobalStore\DataAccess\bin\Debug\MySql.Data.dll
+C:\Users\ALEXANDER\Documents\Base-2014\GlobalStore Solution\GlobalStore\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\ALEXANDER\Documents\Base-2014\GlobalStore Solution\GlobalStore\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\ALEXANDER\Documents\Base-2014\GlobalStore Solution\GlobalStore\DataAccess\obj\Debug\DataAccess.pdb

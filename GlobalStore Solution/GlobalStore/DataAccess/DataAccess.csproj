@@ -44,7 +44,10 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="Cantante.cs" />
+    <Compile Include="DBBackoffice\Disco.cs" />
     <Compile Include="DBBackoffice\Empleados.cs" />
+    <Compile Include="DBBackoffice\Empresa.cs" />
+    <Compile Include="DBBackoffice\Pelicula.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
