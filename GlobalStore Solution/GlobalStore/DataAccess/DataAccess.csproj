@@ -48,6 +48,7 @@
     <Compile Include="DBBackoffice\Empleados.cs" />
     <Compile Include="DBBackoffice\Empresa.cs" />
     <Compile Include="DBBackoffice\Pelicula.cs" />
+    <Compile Include="DBBackoffice\TJCredito.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

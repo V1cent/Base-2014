@@ -1,0 +1,24 @@
+﻿@model BackOffice.Models.TJCreditoModel
+
+<h2>Actor</h2>
+
+@using (Html.BeginForm("AddTipoTJcredito", "TJCredito", FormMethod.Post))
+{
+    <div>
+        <fieldset>
+            <legend>Agregar Director</legend>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Ntipotj)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Ntipotj)
+                @Html.ValidationMessageFor(m => m.Ntipotj)
+            </div>
+            <p>
+                <input type="submit" value="Agregar" />
+            </p>
+        </fieldset>
+
+    </div>
+    
+}

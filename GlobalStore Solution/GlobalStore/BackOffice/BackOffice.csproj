@@ -108,10 +108,12 @@
     <Compile Include="Controllers\EmpresaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PeliculaController.cs" />
+    <Compile Include="Controllers\TJCreditoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\TJCreditoModels.cs" />
     <Compile Include="Models\PeliculaModels.cs" />
     <Compile Include="Models\EmpresaModels.cs" />
     <Compile Include="Models\DiscoModels.cs" />
@@ -223,6 +225,8 @@
     <Content Include="Views\Pelicula\_Lenguaje.cshtml" />
     <Content Include="Views\Pelicula\_Subtitulo.cshtml" />
     <Content Include="Views\Pelicula\_BorrarSubtitulo.cshtml" />
+    <Content Include="Views\TJCredito\Index.cshtml" />
+    <Content Include="Views\TJCredito\_TipoTJCredito.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
